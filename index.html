@@ -15,6 +15,27 @@
 <img src="assets/img/menuemhtml2.png"  usemap="#menu">
 <img src="assets/img/princess-1.png">
 <img src="">
+
+<script type="text/javascript">
+var userAgent = navigator.userAgent.toLowerCase();
+var devices = new Array('nokia','iphone','blackberry','sony','lg',
+'htc_tattoo','samsung','symbian','SymbianOS','elaine','palm',
+'series60','windows ce','android','obigo','netfront',
+'openwave','mobilexplorer','operamini');
+var url_redirect = 'm.seusite.com';
+function mobiDetect(userAgent, devices) {
+for(var i = 0; i < devices.length; i++) {
+if (userAgent.search(devices[i]) > 0) {
+return true;
+}
+}
+return false;
+}
+if (mobiDetect(userAgent, devices)) {
+window.location.href = url_redirect;
+}
+</script>
+
 </body>
 <pre><footer><font color="#363636"><font size="4"><font face="Time News Roman">
                                                                                           © 2020 BrunoArts Todos os direitos reservados.
