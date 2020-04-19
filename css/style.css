@@ -1,7 +1,8 @@
 
 .nav li {
 
-    list-style: none;
+    list-style:none;
+
 }
 .nav li a {
 
@@ -12,7 +13,7 @@
     font-size: 0.9em;
     text-transform: uppercase;
     font-weight: 700;
-    
+ 
 }
 .nav {
 
@@ -22,7 +23,8 @@
     display: flex;
     border-left: 15px solid;
     padding-left: 20px;
-    border-color: #797979;
+    border-color: #bebebe;
     border-width: 15px;
 
 }
+.nav li a:hover{color:white;}
